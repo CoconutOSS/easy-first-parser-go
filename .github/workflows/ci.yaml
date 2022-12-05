@@ -1,3 +1,7 @@
 name: CI
 
-on: [p
+on: [push, pull_request]
+
+jobs:
+  test:
+    n
