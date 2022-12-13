@@ -7,4 +7,5 @@ jobs:
     name: Test
     runs-on: ubuntu-16.04    
     steps:
-    - na
+    - name: Checkout code
+      uses
