@@ -1,0 +1,1 @@
+COVERAGE = coverage.o
