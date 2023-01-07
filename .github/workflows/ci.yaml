@@ -11,4 +11,5 @@ jobs:
       uses: actions/checkout@master
     - name: Build
       env:
-        GOPATH: /home/runner
+        GOPATH: /home/runner/work/
+      run: make 
