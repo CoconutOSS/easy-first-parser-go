@@ -1,1 +1,5 @@
-COVERAGE = coverage.o
+COVERAGE = coverage.out
+
+all: build
+
+.PHONY: deps
