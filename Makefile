@@ -5,4 +5,4 @@ all: build
 .PHONY: deps
 deps:
 	go get github.com/mattn/goveralls
-	go get -
+	go get -u github.com/jteeuwen/go-binda
