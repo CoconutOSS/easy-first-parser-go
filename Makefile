@@ -8,4 +8,5 @@ deps:
 	go get -u github.com/jteeuwen/go-bindata/...
 
 .PHONY: bindata
-bindata
+bindata:
+	${GOPATH}/bin/
