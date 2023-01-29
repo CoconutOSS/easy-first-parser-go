@@ -9,4 +9,4 @@ deps:
 
 .PHONY: bindata
 bindata:
-	${GOPATH}/bin/
+	${GOPATH}/bin/go-bindata -ignore='\.gitk
