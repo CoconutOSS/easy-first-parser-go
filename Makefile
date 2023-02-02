@@ -21,4 +21,6 @@ fmt:
 
 .PHONY: test
 test:
-	go t
+	go test -v ./...
+
+.PHONY
