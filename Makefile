@@ -23,4 +23,6 @@ fmt:
 test:
 	go test -v ./...
 
-.PHONY
+.PHONY: cover
+cover:
+	go test -
