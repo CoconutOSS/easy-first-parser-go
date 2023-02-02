@@ -17,4 +17,4 @@ build:
 
 .PHONY: fmt
 fmt:
-	gofmt -s -w $$(gi
+	gofmt -s -w $$(git ls-files | grep -e '\.go$$
