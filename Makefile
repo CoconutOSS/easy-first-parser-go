@@ -12,3 +12,7 @@ bindata:
 	${GOPATH}/bin/go-bindata -ignore='\.gitkeep' data
 
 .PHONY: build
+build:
+	go build -v
+
+.PH
