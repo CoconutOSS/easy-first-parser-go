@@ -17,4 +17,8 @@ build:
 
 .PHONY: fmt
 fmt:
-	gofmt -s -w $$(git ls-files | grep -e '\.go$$' | grep -v -e vendo
+	gofmt -s -w $$(git ls-files | grep -e '\.go$$' | grep -v -e vendor)
+
+.PHONY: test
+test:
+	go t
