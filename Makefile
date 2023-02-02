@@ -15,4 +15,6 @@ bindata:
 build:
 	go build -v
 
-.PH
+.PHONY: fmt
+fmt:
+	gofmt -s -w $$(gi
