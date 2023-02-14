@@ -25,4 +25,6 @@ test:
 
 .PHONY: cover
 cover:
-	go test -v -cover -race -cover
+	go test -v -cover -race -coverprofile=${COVERAGE}
+
+.PHONY
