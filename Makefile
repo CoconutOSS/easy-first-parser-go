@@ -25,4 +25,4 @@ test:
 
 .PHONY: cover
 cover:
-	go test -
+	go test -v -cover -race -cover
