@@ -27,4 +27,6 @@ test:
 cover:
 	go test -v -cover -race -coverprofile=${COVERAGE}
 
-.PHONY
+.PHONY: vet
+vet:
+	go tool vet --a
