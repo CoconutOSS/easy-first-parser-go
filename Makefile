@@ -29,4 +29,6 @@ cover:
 
 .PHONY: vet
 vet:
-	go tool vet --a
+	go tool vet --all *.go
+
+.PHONY: test-all
