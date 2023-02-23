@@ -32,3 +32,4 @@ vet:
 	go tool vet --all *.go
 
 .PHONY: test-all
+test-all: vet test
