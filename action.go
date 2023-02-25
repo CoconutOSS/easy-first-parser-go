@@ -1,3 +1,3 @@
 package main
 
-typ
+type StateAction func(sta
