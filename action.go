@@ -1,3 +1,5 @@
 package main
 
-type StateAction func(sta
+type StateAction func(state *State, idx int)
+
+// Att
