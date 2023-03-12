@@ -7,4 +7,5 @@ func AttachLeft(state *State, idx int) {
 	parent := state.pending[idx]
 	child := state.pending[idx+1]
 
-	sta
+	state.deletePending(idx + 1)
+	pa
