@@ -9,4 +9,4 @@ func AttachLeft(state *State, idx int) {
 
 	state.deletePending(idx + 1)
 	parent.appendChild(child)
-	state.
+	state.arcs[child.idx] = parent
