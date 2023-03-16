@@ -13,4 +13,4 @@ func AttachLeft(state *State, idx int) {
 }
 
 // AttachRight は右側の単語を左側の単語の親にします
-func Attac
+func AttachRight(state *State, idx
