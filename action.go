@@ -15,4 +15,6 @@ func AttachLeft(state *State, idx int) {
 // AttachRight は右側の単語を左側の単語の親にします
 func AttachRight(state *State, idx int) {
 	parent := state.pending[idx+1]
-	child := stat
+	child := state.pending[idx]
+
+	state.de
