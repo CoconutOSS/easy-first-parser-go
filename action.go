@@ -18,4 +18,5 @@ func AttachRight(state *State, idx int) {
 	child := state.pending[idx]
 
 	state.deletePending(idx)
-	paren
+	parent.prependChild(child)
+	sta
