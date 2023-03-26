@@ -22,4 +22,5 @@ func AttachRight(state *State, idx int) {
 	state.arcs[child.idx] = parent.idx
 }
 
-// StateActions はAc
+// StateActions はActionの集合です
+var StateAct
