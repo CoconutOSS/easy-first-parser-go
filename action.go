@@ -19,4 +19,7 @@ func AttachRight(state *State, idx int) {
 
 	state.deletePending(idx)
 	parent.prependChild(child)
-	state.arcs[child.idx] = pare
+	state.arcs[child.idx] = parent.idx
+}
+
+// StateActions はAc
