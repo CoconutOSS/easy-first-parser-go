@@ -23,4 +23,4 @@ func AttachRight(state *State, idx int) {
 }
 
 // StateActions はActionの集合です
-var StateActions = []StateAction{AttachL
+var StateActions = []StateAction{AttachLeft, AttachRight}
