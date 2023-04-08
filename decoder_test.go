@@ -5,4 +5,5 @@ import (
 )
 
 func TestDecode(t *testing.T) {
-	words := make([
+	words := make([]*Word, 0)
+	words = app
