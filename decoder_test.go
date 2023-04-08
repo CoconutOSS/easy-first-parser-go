@@ -1,4 +1,7 @@
 package main
 
 import (
-	"tes
+	"testing"
+)
+
+func TestDecode(t
