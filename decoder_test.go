@@ -4,4 +4,5 @@ import (
 	"testing"
 )
 
-func TestDecode(t
+func TestDecode(t *testing.T) {
+	words := make([
