@@ -10,4 +10,5 @@ func TestDecode(t *testing.T) {
 		makeRootWord(),
 		makeWord("ms.", "NNP", 1, 2),
 		makeWord("hang", "NNP", 2, 3),
-		makeWo
+		makeWord("plays", "VBZ", 3, 0),
+		mak
