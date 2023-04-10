@@ -7,4 +7,5 @@ import (
 func TestDecode(t *testing.T) {
 	words := make([]*Word, 0)
 	words = append(words,
-		makeRootWor
+		makeRootWord(),
+		makeWord("ms.",
