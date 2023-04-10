@@ -9,4 +9,5 @@ func TestDecode(t *testing.T) {
 	words = append(words,
 		makeRootWord(),
 		makeWord("ms.", "NNP", 1, 2),
-		makeWord("han
+		makeWord("hang", "NNP", 2, 3),
+		makeWo
