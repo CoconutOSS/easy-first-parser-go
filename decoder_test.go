@@ -14,4 +14,5 @@ func TestDecode(t *testing.T) {
 		makeWord("elianti", "NNP", 4, 3),
 		makeWord(".", ".", 5, 3),
 	)
-	sent := Sentence{wor
+	sent := Sentence{words: words}
+	weight :=
