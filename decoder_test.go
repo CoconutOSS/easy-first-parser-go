@@ -15,4 +15,4 @@ func TestDecode(t *testing.T) {
 		makeWord(".", ".", 5, 3),
 	)
 	sent := Sentence{words: words}
-	weight :=
+	weight := make([]float64, MaxFeatu
