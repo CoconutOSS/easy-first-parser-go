@@ -15,4 +15,6 @@ func TestDecode(t *testing.T) {
 		makeWord(".", ".", 5, 3),
 	)
 	sent := Sentence{words: words}
-	weight := make([]float64, MaxFeatu
+	weight := make([]float64, MaxFeatureLength)
+
+	s := NewState(sent.w
