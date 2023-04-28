@@ -18,4 +18,5 @@ func TestDecode(t *testing.T) {
 	weight := make([]float64, MaxFeatureLength)
 
 	s := NewState(sent.words)
-	decode(&weight, 
+	decode(&weight, s)
+	if len(s.arcs) == 0 {
