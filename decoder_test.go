@@ -20,3 +20,4 @@ func TestDecode(t *testing.T) {
 	s := NewState(sent.words)
 	decode(&weight, s)
 	if len(s.arcs) == 0 {
+		t.Error("length of arcs must
