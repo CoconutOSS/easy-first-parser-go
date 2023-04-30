@@ -22,3 +22,4 @@ func TestDecode(t *testing.T) {
 	if len(s.arcs) == 0 {
 		t.Error("length of arcs must be greater than 0")
 	}
+}
