@@ -26,3 +26,29 @@ func dependencyAccuracy(golds [][]int, predictions [][]int) (float64, error) {
 		}
 	}
 	return sum / count, nil
+}
+
+func DependencyAccuracy(w *[]float64, sents []*Sentence) float64 {
+	wg := &sync.WaitGroup{}
+	goldHeads := make([][]int, 0)
+	for _, sent := range sents {
+		goldHeads = append(goldHeads, sent.ExtractHeads())
+	}
+
+	predHeads := make([][]int, 0)
+
+	cpus := runtime.NumCPU()
+	semaphore := make(chan int, cpus)
+	for _, sent := range sents {
+		wg.Add(1)
+		go func(sent *Sentence) {
+			defer wg.Done()
+			semaphore <- 1
+			Decode(w, sent)
+			<-semaphore
+		}(sent)
+	}
+	wg.Wait()
+
+	for _, sent := range sents {
+		predHeads = append(predHeads, sent.ExtractPredictedHeads())
