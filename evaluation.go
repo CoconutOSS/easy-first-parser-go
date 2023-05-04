@@ -52,3 +52,7 @@ func DependencyAccuracy(w *[]float64, sents []*Sentence) float64 {
 
 	for _, sent := range sents {
 		predHeads = append(predHeads, sent.ExtractPredictedHeads())
+	}
+	accuracy, _ := dependencyAccuracy(goldHeads, predHeads)
+	return accuracy
+}
