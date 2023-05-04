@@ -4,4 +4,5 @@ import (
 	"testing"
 )
 
-func TestDependencyAccuracy(
+func TestDependencyAccuracy(t *testing.T) {
+	g1 := []int{
