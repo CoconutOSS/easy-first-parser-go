@@ -5,4 +5,5 @@ import (
 )
 
 func TestDependencyAccuracy(t *testing.T) {
-	g1 := []int{
+	g1 := []int{1, 2, 3}
+	g2 := []int{
