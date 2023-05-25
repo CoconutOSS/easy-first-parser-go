@@ -13,3 +13,4 @@ func TestDependencyAccuracy(t *testing.T) {
 	p1 := []int{1, 2, 30}
 	p2 := []int{1, 2, 30}
 	p3 := []int{1, 2, 3, 40}
+	p := [][]int{p1, p2, 
