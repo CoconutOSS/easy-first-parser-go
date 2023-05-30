@@ -15,4 +15,4 @@ func TestDependencyAccuracy(t *testing.T) {
 	p3 := []int{1, 2, 3, 40}
 	p := [][]int{p1, p2, p3}
 
-	if a, _ := dep
+	if a, _ := dependencyAccuracy(g, p); a !
