@@ -16,4 +16,6 @@ func TestDependencyAccuracy(t *testing.T) {
 	p := [][]int{p1, p2, p3}
 
 	if a, _ := dependencyAccuracy(g, p); a != 0.7 {
-		t.Error("dependency accuracy must be 0.7"
+		t.Error("dependency accuracy must be 0.7")
+	}
+}
