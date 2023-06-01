@@ -130,3 +130,33 @@ func addStructuralPairFeatures(features *[]int, actName string, left *Word, righ
 
 func extractFeatures(state *State, actName string, idx int) []int {
 	features := make([]int, 0)
+	AddUnigramFeatures(&features, state, actName, idx)
+	AddStructuralSingleFeatures(&features, state, actName, idx)
+
+	p0 := NilSafePendingWord(state, idx-1)
+	p1 := NilSafePendingWord(state, idx)
+	p2 := NilSafePendingWord(state, idx+1)
+	p3 := NilSafePendingWord(state, idx+2)
+
+	AddBigramFeatures(&features, actName, p1, p2, "p_i+p_{i+1}")
+	AddBigramFeatures(&features, actName, p1, p3, "p_i+p_{i+2}")
+	AddBigramFeatures(&features, actName, p0, p1, "p_{i-1}+p_i")
+	AddBigramFeatures(&features, actName, p0, p3, "p_{i-1}+p_{i+2}")
+	AddBigramFeatures(&features, actName, p2, p3, "p_{i+1}+p_{i+2}")
+
+	addStructuralPairFeatures(&features, actName, p1, p2, "p_i+p_{i+1}")
+	addStructuralPairFeatures(&features, actName, p1, p3, "p_i+p_{i+2}")
+	addStructuralPairFeatures(&features, actName, p0, p1, "p_{i-1}+p_i")
+	addStructuralPairFeatures(&features, actName, p0, p3, "p_{i-1}+p_{i+2}")
+	addStructuralPairFeatures(&features, actName, p2, p3, "p_{i+1}+p_{i+2}")
+
+	return features
+}
+
+func mod(n, m int) int {
+	if n < 0 {
+		return (m - (-n % m)) % m
+	} else {
+		return n % m
+	}
+}
