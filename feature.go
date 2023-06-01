@@ -74,3 +74,30 @@ func AddBigramFeatures(features *[]int, actName string, parent *Word, child *Wor
 		JenkinsHash(actName+"+"+prefix+"+parent-surface:"+parent.surface+"+child-posTag:"+child.posTag),
 		JenkinsHash(actName+"+"+prefix+"+parent-posTag:"+parent.posTag+"+child-surface:"+child.surface),
 		JenkinsHash(actName+"+"+prefix+"+parent-lemma:"+parent.lemma+"+child-lemma:"+child.lemma),
+		JenkinsHash(actName+"+"+prefix+"+parent-posTag:"+parent.posTag+"+child-posTag:"+child.posTag),
+		JenkinsHash(actName+"+"+prefix+"+parent-cposTag:"+parent.cposTag+"+child-cposTag:"+child.cposTag),
+		JenkinsHash(actName+"+"+prefix+"+parent-posTag:"+parent.posTag+"+child-posTag:"+child.posTag+"+plcp:"+plcp+"+prcp:"+prcp),
+		JenkinsHash(actName+"+"+prefix+"+parent-posTag:"+parent.posTag+"+child-posTag:"+child.posTag+"+plcp:"+plcp+"+crcp:"+crcp),
+		JenkinsHash(actName+"+"+prefix+"+parent-posTag:"+parent.posTag+"+child-posTag:"+child.posTag+"+clcp:"+clcp+"+prcp:"+prcp),
+		JenkinsHash(actName+"+"+prefix+"+parent-posTag:"+parent.posTag+"+child-posTag:"+child.posTag+"+clcp:"+clcp+"+crcp:"+crcp),
+	)
+}
+
+func AddUnigramFeatures(features *[]int, state *State, actName string, idx int) {
+	addUnigramFeatures(features, state, actName, idx-2, "p_i-2")
+	addUnigramFeatures(features, state, actName, idx-1, "p_i-1")
+	addUnigramFeatures(features, state, actName, idx, "p_i")
+	addUnigramFeatures(features, state, actName, idx+1, "p_i+1")
+	addUnigramFeatures(features, state, actName, idx+2, "p_i+2")
+	addUnigramFeatures(features, state, actName, idx+3, "p_i+3")
+}
+
+func hasNoChildren(w *Word) bool {
+	return len(w.children) == 0
+}
+
+func addStructuralSingleFeatures(features *[]int, state *State, actName string, idx int, prefix string) {
+	if idx < 0 || idx >= len(state.pending) {
+		return
+	}
+	w := state.pending[idx]
