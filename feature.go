@@ -101,3 +101,32 @@ func addStructuralSingleFeatures(features *[]int, state *State, actName string, 
 		return
 	}
 	w := state.pending[idx]
+	*features = append(*features,
+		JenkinsHash(actName+"+"+prefix+"+len:"+strconv.Itoa(len(w.children))),
+		JenkinsHash(actName+"+"+prefix+"+no-children:"+strconv.FormatBool(hasNoChildren(w))),
+	)
+}
+
+func AddStructuralSingleFeatures(features *[]int, state *State, actName string, idx int) {
+	addStructuralSingleFeatures(features, state, actName, idx-2, "p_i-2")
+	addStructuralSingleFeatures(features, state, actName, idx-1, "p_i-1")
+	addStructuralSingleFeatures(features, state, actName, idx, "p_i")
+	addStructuralSingleFeatures(features, state, actName, idx+1, "p_i+1")
+	addStructuralSingleFeatures(features, state, actName, idx+2, "p_i+2")
+	addStructuralSingleFeatures(features, state, actName, idx+3, "p_i+3")
+}
+
+func addStructuralPairFeatures(features *[]int, actName string, left *Word, right *Word, prefix string) {
+	if left == nil || right == nil {
+		return
+	}
+	dist := int(math.Abs(float64(left.idx - right.idx)))
+
+	*features = append(*features,
+		JenkinsHash(actName+"+"+prefix+"+dist:"+distStr(dist)),
+		JenkinsHash(actName+"+"+prefix+"+dist:"+distStr(dist)+"+leftPos:"+left.posTag+"+rightPos:"+right.posTag),
+	)
+}
+
+func extractFeatures(state *State, actName string, idx int) []int {
+	features := make([]int, 0)
