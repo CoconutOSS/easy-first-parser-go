@@ -160,3 +160,27 @@ func mod(n, m int) int {
 		return n % m
 	}
 }
+
+var MaxFeatureLength = 1000000
+
+func JenkinsHash(s string) int {
+	hash := 0
+	for _, b := range []byte(s) {
+		hash += int(b)
+		hash += hash << 10
+		hash ^= hash >> 6
+	}
+
+	hash += hash << 3
+	hash ^= hash >> 11
+	hash += hash << 15
+
+	return mod(hash, MaxFeatureLength)
+}
+
+func ExtractFeatures(state *State, pair ActionIndexPair) []int {
+	actName := runtime.FuncForPC(reflect.ValueOf(pair.action).Pointer()).Name()
+
+	features := extractFeatures(state, actName, pair.index)
+	return features
+}
