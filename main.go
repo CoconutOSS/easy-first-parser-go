@@ -36,3 +36,25 @@ var commandTrain = cli.Command{
 	Usage: "Train a parsing model by easy-first algorithm",
 	Description: `
 Train a parsing model by easy-first algorithm.
+`,
+	Action: doTrain,
+	Flags: []cli.Flag{
+		cli.StringFlag{Name: "train-filename"},
+		cli.StringFlag{Name: "dev-filename"},
+		cli.StringFlag{Name: "model-filename"},
+		cli.IntFlag{Name: "max-iter", Value: 10},
+	},
+}
+
+var commandEval = cli.Command{
+	Name:  "eval",
+	Usage: "Evaluate a parsing model by easy-first algorithm",
+	Description: `
+Evaluate a parsing model by easy-first algorithm.
+`,
+	Action: doEval,
+	Flags: []cli.Flag{
+		cli.StringFlag{Name: "test-filename"},
+		cli.StringFlag{Name: "model-filename"},
+	},
+}
