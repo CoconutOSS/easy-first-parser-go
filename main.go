@@ -58,3 +58,35 @@ Evaluate a parsing model by easy-first algorithm.
 		cli.StringFlag{Name: "model-filename"},
 	},
 }
+
+// This is an experimental feature
+var commandDecode = cli.Command{
+	Name:  "decode",
+	Usage: "Decode a sentence with an embeded model",
+	Description: `
+Decode a sentence with an embeded model.
+`,
+	Action: doDecode,
+	Flags: []cli.Flag{
+		cli.StringFlag{Name: "test-filename"},
+	},
+}
+
+var Commands = []cli.Command{
+	commandTrain,
+	commandEval,
+	commandDecode,
+}
+
+func doTrain(c *cli.Context) error {
+	trainFilename := c.String("train-filename")
+	devFilename := c.String("dev-filename")
+	modelFilename := c.String("model-filename")
+	maxIter := c.Int("max-iter")
+
+	if trainFilename == "" {
+		_ = cli.ShowCommandHelp(c, "train")
+		return cli.NewExitError("`train-filename` is a required field to train a parser.", 1)
+	}
+
+	if devFilename == "" {
