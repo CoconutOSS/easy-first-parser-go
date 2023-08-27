@@ -90,3 +90,31 @@ func doTrain(c *cli.Context) error {
 	}
 
 	if devFilename == "" {
+		_ = cli.ShowCommandHelp(c, "train")
+		return cli.NewExitError("`dev-filename` is a required field to train a parser.", 1)
+	}
+
+	if modelFilename == "" {
+		_ = cli.ShowCommandHelp(c, "train")
+		return cli.NewExitError("`model-filename` is a required field to train a parser.", 1)
+	}
+
+	goldSents, _ := ReadData(trainFilename)
+	devSents, _ := ReadData(devFilename)
+
+	model := NewModel()
+	for iter := 0; iter < maxIter; iter++ {
+		shuffle(goldSents)
+		for _, sent := range goldSents {
+			model.Update(sent)
+		}
+		w := model.AveragedWeight()
+		trainAccuracy := DependencyAccuracy(&w, goldSents)
+		devAccuracy := DependencyAccuracy(&w, devSents)
+		fmt.Println(fmt.Sprintf("%d, %0.03f, %0.03f", iter, trainAccuracy, devAccuracy))
+	}
+
+	w := model.AveragedWeight()
+	SaveModel(&w, modelFilename)
+	return nil
+}
