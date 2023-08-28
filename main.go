@@ -118,3 +118,27 @@ func doTrain(c *cli.Context) error {
 	SaveModel(&w, modelFilename)
 	return nil
 }
+
+func doEval(c *cli.Context) error {
+	testFilename := c.String("test-filename")
+	modelFilename := c.String("model-filename")
+
+	if testFilename == "" {
+		_ = cli.ShowCommandHelp(c, "eval")
+		return cli.NewExitError("`test-filename` is a required field to evaluate a parser.", 1)
+	}
+
+	if modelFilename == "" {
+		_ = cli.ShowCommandHelp(c, "eval")
+		return cli.NewExitError("`model-filename` is a required field to evaluate a parser.", 1)
+	}
+
+	goldSents, _ := ReadData(testFilename)
+	weight, _ := LoadModel(modelFilename)
+	start := time.Now()
+	testAccuracy := DependencyAccuracy(weight, goldSents)
+	end := time.Now().Sub(start).Seconds()
+
+	data := [][]string{
+		{fmt.Sprintf("%d", len(goldSents)), fmt.Sprintf("%0.02f", end), fmt.Sprintf("%0.03f", testAccuracy)},
+	}
