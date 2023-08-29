@@ -177,3 +177,21 @@ func doDecode(c *cli.Context) error {
 
 	start := time.Now()
 	testAccuracy := DependencyAccuracy(weight, goldSents)
+	end := time.Now().Sub(start).Seconds()
+
+	data := [][]string{
+		{fmt.Sprintf("%d", len(goldSents)), fmt.Sprintf("%0.02f", end), fmt.Sprintf("%0.03f", testAccuracy)},
+	}
+	printEvaluation(data)
+	return nil
+}
+
+func main() {
+	app := cli.NewApp()
+	app.Name = "easy-first"
+	app.Commands = Commands
+
+	runtime.GOMAXPROCS(runtime.NumCPU())
+
+	app.Run(os.Args)
+}
