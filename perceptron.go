@@ -1,1 +1,5 @@
-package ma
+package main
+
+import (
+	"errors"
+	"math"
