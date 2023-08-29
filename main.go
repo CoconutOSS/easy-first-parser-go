@@ -142,3 +142,38 @@ func doEval(c *cli.Context) error {
 	data := [][]string{
 		{fmt.Sprintf("%d", len(goldSents)), fmt.Sprintf("%0.02f", end), fmt.Sprintf("%0.03f", testAccuracy)},
 	}
+	printEvaluation(data)
+	return nil
+}
+
+func loadModel(filename string) (*[]float64, error) {
+	var weight []float64
+	var b bytes.Buffer
+	tmp, err := Asset(filename)
+	if err != nil {
+		return nil, err
+	}
+	b.Write(tmp)
+
+	decoder := gob.NewDecoder(&b)
+	decoder.Decode(&weight)
+	return &weight, nil
+}
+
+func doDecode(c *cli.Context) error {
+	testFilename := c.String("test-filename")
+
+	if testFilename == "" {
+		_ = cli.ShowCommandHelp(c, "decode")
+		return cli.NewExitError("`test-filename` is a required field to decode sentences.", 1)
+	}
+
+	goldSents, _ := ReadData(testFilename)
+
+	weight, err := loadModel("data/model.bin")
+	if err != nil {
+		return err
+	}
+
+	start := time.Now()
+	testAccuracy := DependencyAccuracy(weight, goldSents)
