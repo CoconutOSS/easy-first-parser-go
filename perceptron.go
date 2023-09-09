@@ -7,4 +7,4 @@ import (
 )
 
 // GoldArcs returns map of parent => children
-func GoldArc
+func GoldArcs(sent *Sentence) map[int][]int {
