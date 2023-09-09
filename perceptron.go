@@ -6,4 +6,4 @@ import (
 	"reflect"
 )
 
-// Go
+// GoldArcs returns map of par
