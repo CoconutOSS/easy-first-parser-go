@@ -6,4 +6,5 @@ import (
 	"reflect"
 )
 
-// GoldArcs returns map of par
+// GoldArcs returns map of parent => children
+func GoldArc
