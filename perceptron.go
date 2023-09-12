@@ -10,4 +10,5 @@ import (
 func GoldArcs(sent *Sentence) map[int][]int {
 	result := make(map[int][]int)
 	for idx, w := range sent.words {
-		head := w
+		head := w.head
+		if children, ok
