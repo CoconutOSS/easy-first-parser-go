@@ -8,4 +8,5 @@ import (
 
 // GoldArcs returns map of parent => children
 func GoldArcs(sent *Sentence) map[int][]int {
-	result := make(map[i
+	result := make(map[int][]int)
+	for idx, w := rang
