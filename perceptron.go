@@ -14,4 +14,7 @@ func GoldArcs(sent *Sentence) map[int][]int {
 		if children, ok := result[head]; ok {
 			result[head] = append(children, idx)
 		} else {
-			result[h
+			result[head] = []int{idx}
+		}
+	}
+	
