@@ -17,4 +17,7 @@ func GoldArcs(sent *Sentence) map[int][]int {
 			result[head] = []int{idx}
 		}
 	}
-	
+	return result
+}
+
+// EdgeFor r
