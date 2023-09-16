@@ -20,4 +20,4 @@ func GoldArcs(sent *Sentence) map[int][]int {
 	return result
 }
 
-// EdgeFor r
+// EdgeFor returns a pair of paren
