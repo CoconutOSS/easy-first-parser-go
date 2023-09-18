@@ -21,4 +21,4 @@ func GoldArcs(sent *Sentence) map[int][]int {
 }
 
 // EdgeFor returns a pair of parent index and child index
-fun
+func EdgeFor(state *State, actio
