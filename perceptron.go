@@ -24,4 +24,4 @@ func GoldArcs(sent *Sentence) map[int][]int {
 func EdgeFor(state *State, actionID int, idx int) ([]int, error) {
 	switch actionID {
 	case 0:
-		return []int{st
+		return []int{state.pending[idx].idx, state.pen
