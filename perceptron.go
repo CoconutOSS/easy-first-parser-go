@@ -26,4 +26,4 @@ func EdgeFor(state *State, actionID int, idx int) ([]int, error) {
 	case 0:
 		return []int{state.pending[idx].idx, state.pending[idx+1].idx}, nil
 	case 1:
-		return []int{state.
+		return []int{state.pending[idx+1].idx, sta
