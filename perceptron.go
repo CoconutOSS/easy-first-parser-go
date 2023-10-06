@@ -32,4 +32,4 @@ func EdgeFor(state *State, actionID int, idx int) ([]int, error) {
 	}
 }
 
-// IsValid returns the chosen act
+// IsValid returns the chosen action/location pair is vali
