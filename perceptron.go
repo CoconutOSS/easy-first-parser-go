@@ -28,4 +28,6 @@ func EdgeFor(state *State, actionID int, idx int) ([]int, error) {
 	case 1:
 		return []int{state.pending[idx+1].idx, state.pending[idx].idx}, nil
 	default:
-		return nil, error
+		return nil, errors.New("Invalid line")
+	}
+}
