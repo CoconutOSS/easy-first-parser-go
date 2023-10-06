@@ -31,3 +31,5 @@ func EdgeFor(state *State, actionID int, idx int) ([]int, error) {
 		return nil, errors.New("Invalid line")
 	}
 }
+
+// IsValid returns the chosen act
