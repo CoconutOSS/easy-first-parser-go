@@ -36,4 +36,7 @@ func EdgeFor(state *State, actionID int, idx int) ([]int, error) {
 func IsValid(state *State, actionID int, idx int, goldArcs map[int][]int) bool {
 	pair, err := EdgeFor(state, actionID, idx)
 	if err != nil {
-		return fals
+		return false
+	}
+	pIdx := pair[0]
+	cIdx := pair
