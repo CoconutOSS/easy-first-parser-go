@@ -42,4 +42,5 @@ func IsValid(state *State, actionID int, idx int, goldArcs map[int][]int) bool {
 	cIdx := pair[1]
 	containedInGoldArcs := false
 	for _, i := range goldArcs[pIdx] {
-		if cIdx ==
+		if cIdx == i {
+			containedInGoldArcs
