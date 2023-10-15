@@ -48,4 +48,4 @@ func IsValid(state *State, actionID int, idx int, goldArcs map[int][]int) bool {
 		}
 	}
 	flag := false
-	for
+	for _, cPrime := range go
