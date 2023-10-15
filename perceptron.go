@@ -45,3 +45,7 @@ func IsValid(state *State, actionID int, idx int, goldArcs map[int][]int) bool {
 		if cIdx == i {
 			containedInGoldArcs = true
 			break
+		}
+	}
+	flag := false
+	for
