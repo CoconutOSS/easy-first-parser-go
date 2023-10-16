@@ -50,4 +50,8 @@ func IsValid(state *State, actionID int, idx int, goldArcs map[int][]int) bool {
 	flag := false
 	for _, cPrime := range goldArcs[cIdx] {
 		if cIdx != state.arcs[cPrime] {
-			flag =
+			flag = true
+			break
+		}
+	}
+	if 
