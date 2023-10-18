@@ -56,3 +56,8 @@ func IsValid(state *State, actionID int, idx int, goldArcs map[int][]int) bool {
 	}
 	if !containedInGoldArcs || flag {
 		return false
+	}
+	return true
+}
+
+type Actio
