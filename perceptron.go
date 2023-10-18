@@ -60,4 +60,5 @@ func IsValid(state *State, actionID int, idx int, goldArcs map[int][]int) bool {
 	return true
 }
 
-type Actio
+type ActionIndexPair struct {
+	act
