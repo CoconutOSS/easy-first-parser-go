@@ -65,4 +65,4 @@ type ActionIndexPair struct {
 	index  int
 }
 
-func (pair1 ActionIndexPair) Sa
+func (pair1 ActionIndexPair) SameActionIndexPair(pair2 Ac
