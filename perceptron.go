@@ -70,4 +70,4 @@ func (pair1 ActionIndexPair) SameActionIndexPair(pair2 ActionIndexPair) bool {
 		reflect.ValueOf(pair1.action).Pointer() == reflect.ValueOf(pair2.action).Pointer()
 }
 
-func AllowedActio
+func AllowedActions(state *State, goldArcs m
