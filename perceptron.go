@@ -67,4 +67,7 @@ type ActionIndexPair struct {
 
 func (pair1 ActionIndexPair) SameActionIndexPair(pair2 ActionIndexPair) bool {
 	return pair1.index == pair2.index &&
-		reflect.ValueOf(pair1.action).Pointer() == reflect.ValueOf(pair2.action).Pointer
+		reflect.ValueOf(pair1.action).Pointer() == reflect.ValueOf(pair2.action).Pointer()
+}
+
+func AllowedActio
