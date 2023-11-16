@@ -73,4 +73,4 @@ func (pair1 ActionIndexPair) SameActionIndexPair(pair2 ActionIndexPair) bool {
 func AllowedActions(state *State, goldArcs map[int][]int) []ActionIndexPair {
 	result := make([]ActionIndexPair, 0)
 	for actionID, f := range StateActions {
-		for
+		for idx := 0; idx < len(state.pe
