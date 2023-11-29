@@ -76,4 +76,9 @@ func AllowedActions(state *State, goldArcs map[int][]int) []ActionIndexPair {
 		for idx := 0; idx < len(state.pending)-1; idx++ {
 			if IsValid(state, actionID, idx, goldArcs) {
 				result = append(result, ActionIndexPair{f, idx})
-			
+			}
+		}
+	}
+	return result
+}
+
