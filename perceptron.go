@@ -82,4 +82,5 @@ func AllowedActions(state *State, goldArcs map[int][]int) []ActionIndexPair {
 	return result
 }
 
-func CandidateActions(state *Sta
+func CandidateActions(state *State) []ActionIndexPair {
+	r
