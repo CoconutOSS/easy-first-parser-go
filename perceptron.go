@@ -85,4 +85,5 @@ func AllowedActions(state *State, goldArcs map[int][]int) []ActionIndexPair {
 func CandidateActions(state *State) []ActionIndexPair {
 	result := make([]ActionIndexPair, 0)
 	for _, f := range StateActions {
-		for idx := 0; i
+		for idx := 0; idx < len(state.pending)-1; idx++ {
+			r
