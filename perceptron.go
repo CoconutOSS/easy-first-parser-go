@@ -86,4 +86,5 @@ func CandidateActions(state *State) []ActionIndexPair {
 	result := make([]ActionIndexPair, 0)
 	for _, f := range StateActions {
 		for idx := 0; idx < len(state.pending)-1; idx++ {
-			result = append(result, Actio
+			result = append(result, ActionIndexPair{f, idx})
+		}
