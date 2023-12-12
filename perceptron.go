@@ -92,4 +92,4 @@ func CandidateActions(state *State) []ActionIndexPair {
 	return result
 }
 
-func DotProduct(weight *[]flo
+func DotProduct(weight *[]float64, fv []int) float64
