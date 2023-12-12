@@ -88,3 +88,8 @@ func CandidateActions(state *State) []ActionIndexPair {
 		for idx := 0; idx < len(state.pending)-1; idx++ {
 			result = append(result, ActionIndexPair{f, idx})
 		}
+	}
+	return result
+}
+
+func D
