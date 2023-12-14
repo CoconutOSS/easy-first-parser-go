@@ -92,4 +92,6 @@ func CandidateActions(state *State) []ActionIndexPair {
 	return result
 }
 
-func DotProduct(weight *[]float64, fv []int) float64
+func DotProduct(weight *[]float64, fv []int) float64 {
+	sum := 0.0
+	for _, f := range
