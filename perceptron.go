@@ -100,4 +100,4 @@ func DotProduct(weight *[]float64, fv []int) float64 {
 	return sum
 }
 
-func BestActionIndexPair(weight 
+func BestActionIndexPair(weight *[]float64, state *State) A
