@@ -101,4 +101,4 @@ func DotProduct(weight *[]float64, fv []int) float64 {
 }
 
 func BestActionIndexPair(weight *[]float64, state *State) ActionIndexPair {
-	bestScore
+	bestScore := math.Inf(-
