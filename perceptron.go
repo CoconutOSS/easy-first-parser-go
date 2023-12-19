@@ -105,4 +105,5 @@ func BestActionIndexPair(weight *[]float64, state *State) ActionIndexPair {
 	pairs := CandidateActions(state)
 	bestPair := pairs[0]
 	for _, pair := range pairs {
-		fv := st
+		fv := state.GetFvCache(pair)
+		sco
