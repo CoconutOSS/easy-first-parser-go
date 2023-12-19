@@ -104,4 +104,5 @@ func BestActionIndexPair(weight *[]float64, state *State) ActionIndexPair {
 	bestScore := math.Inf(-1)
 	pairs := CandidateActions(state)
 	bestPair := pairs[0]
-	for _, pair := ran
+	for _, pair := range pairs {
+		fv := st
