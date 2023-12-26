@@ -111,3 +111,8 @@ func BestActionIndexPair(weight *[]float64, state *State) ActionIndexPair {
 			bestPair = pair
 			bestScore = score
 		}
+	}
+	return bestPair
+}
+
+fu
