@@ -115,4 +115,4 @@ func BestActionIndexPair(weight *[]float64, state *State) ActionIndexPair {
 	return bestPair
 }
 
-fu
+func BestAllowedActionIndexPair(
