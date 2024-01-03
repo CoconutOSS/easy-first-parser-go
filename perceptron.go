@@ -115,4 +115,5 @@ func BestActionIndexPair(weight *[]float64, state *State) ActionIndexPair {
 	return bestPair
 }
 
-func BestAllowedActionIndexPair(weight *[]float64, state *State, pairs []ActionIndexPair) Acti
+func BestAllowedActionIndexPair(weight *[]float64, state *State, pairs []ActionIndexPair) ActionIndexPair {
+	bestScore := m
