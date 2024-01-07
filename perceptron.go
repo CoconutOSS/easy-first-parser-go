@@ -120,4 +120,5 @@ func BestAllowedActionIndexPair(weight *[]float64, state *State, pairs []ActionI
 	bestPair := pairs[0]
 	for _, pair := range pairs {
 		fv := state.GetFvCache(pair)
-		score := DotPro
+		score := DotProduct(weight, fv)
+		if score > best
