@@ -123,4 +123,7 @@ func BestAllowedActionIndexPair(weight *[]float64, state *State, pairs []ActionI
 		score := DotProduct(weight, fv)
 		if score > bestScore {
 			bestPair = pair
-			bestScore = scor
+			bestScore = score
+		}
+	}
+	return bestPair
