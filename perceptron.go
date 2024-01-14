@@ -127,3 +127,6 @@ func BestAllowedActionIndexPair(weight *[]float64, state *State, pairs []ActionI
 		}
 	}
 	return bestPair
+}
+
+type Model struct {
