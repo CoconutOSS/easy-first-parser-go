@@ -136,4 +136,4 @@ type Model struct {
 }
 
 func NewModel() Model {
-	return Model{make([]float64, MaxFe
+	return Model{make([]float64, MaxFeatureLength), make([]float64,
