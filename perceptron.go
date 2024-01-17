@@ -135,4 +135,5 @@ type Model struct {
 	count     int
 }
 
-f
+func NewModel() Model {
+	retu
