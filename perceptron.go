@@ -136,4 +136,4 @@ type Model struct {
 }
 
 func NewModel() Model {
-	retu
+	return Model{make([]float64, MaxFe
