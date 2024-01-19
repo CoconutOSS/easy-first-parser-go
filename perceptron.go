@@ -140,4 +140,5 @@ func NewModel() Model {
 }
 
 func (model *Model) updateWeight(goldFeatureVector *[]int, predictFeatureVector *[]int) {
-	for _, feat := range *g
+	for _, feat := range *goldFeatureVector {
+		w := model.we
