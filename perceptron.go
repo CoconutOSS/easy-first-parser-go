@@ -139,4 +139,4 @@ func NewModel() Model {
 	return Model{make([]float64, MaxFeatureLength), make([]float64, MaxFeatureLength), 1}
 }
 
-func (model *Model) updateWeight(goldFeatureVector *[]int, pred
+func (model *Model) updateWeight(goldFeatureVector *[]int, predictFeatureVector *
