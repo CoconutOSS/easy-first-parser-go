@@ -145,3 +145,5 @@ func (model *Model) updateWeight(goldFeatureVector *[]int, predictFeatureVector 
 		cumW := model.cumWeight[feat]
 		model.weight[feat] = w + 1.0
 		model.cumWeight[feat] = cumW + float64(model.count)
+	}
+	for _, feat := range *predi
