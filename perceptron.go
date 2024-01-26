@@ -155,4 +155,4 @@ func (model *Model) updateWeight(goldFeatureVector *[]int, predictFeatureVector 
 	model.count += 1
 }
 
-func (model *
+func (model *Model) Update(gold *Sentenc
