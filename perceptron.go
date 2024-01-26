@@ -156,4 +156,5 @@ func (model *Model) updateWeight(goldFeatureVector *[]int, predictFeatureVector 
 }
 
 func (model *Model) Update(gold *Sentence) {
-	state := NewS
+	state := NewState(gold.words)
+	goldArcs := G
