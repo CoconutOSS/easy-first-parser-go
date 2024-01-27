@@ -160,4 +160,7 @@ func (model *Model) Update(gold *Sentence) {
 	goldArcs := GoldArcs(gold)
 	iter := 0
 	for {
-		if len(state.pending) 
+		if len(state.pending) <= 1 {
+			break
+		}
+		allow 
