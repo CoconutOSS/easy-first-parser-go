@@ -163,4 +163,5 @@ func (model *Model) Update(gold *Sentence) {
 		if len(state.pending) <= 1 {
 			break
 		}
-		allow := AllowedActions(state, go
+		allow := AllowedActions(state, goldArcs)
+		choice := BestActionI
