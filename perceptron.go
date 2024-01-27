@@ -163,4 +163,4 @@ func (model *Model) Update(gold *Sentence) {
 		if len(state.pending) <= 1 {
 			break
 		}
-		allow 
+		allow := AllowedActions(state, go
