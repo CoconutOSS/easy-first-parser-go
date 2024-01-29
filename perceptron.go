@@ -165,4 +165,6 @@ func (model *Model) Update(gold *Sentence) {
 		}
 		allow := AllowedActions(state, goldArcs)
 		choice := BestActionIndexPair(&model.weight, state)
-		containChoice := fa
+		containChoice := false
+		for _, pair := range allow {
+			if pair.Sa
