@@ -167,4 +167,5 @@ func (model *Model) Update(gold *Sentence) {
 		choice := BestActionIndexPair(&model.weight, state)
 		containChoice := false
 		for _, pair := range allow {
-			if pair.SameActionIndexPair(choi
+			if pair.SameActionIndexPair(choice) {
+				containChoice = tru
