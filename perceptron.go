@@ -168,4 +168,7 @@ func (model *Model) Update(gold *Sentence) {
 		containChoice := false
 		for _, pair := range allow {
 			if pair.SameActionIndexPair(choice) {
-				containChoice = tru
+				containChoice = true
+			}
+		}
+		if containChoice
