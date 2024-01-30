@@ -172,4 +172,5 @@ func (model *Model) Update(gold *Sentence) {
 			}
 		}
 		if containChoice {
-			choice.action(state, cho
+			choice.action(state, choice.index)
+			state.Rese
