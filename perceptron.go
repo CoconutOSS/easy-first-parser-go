@@ -175,4 +175,5 @@ func (model *Model) Update(gold *Sentence) {
 			choice.action(state, choice.index)
 			state.ResetFvCache(choice.index)
 		} else {
-			predFv := st
+			predFv := state.GetFvCache(choice)
+			good :=
