@@ -176,4 +176,4 @@ func (model *Model) Update(gold *Sentence) {
 			state.ResetFvCache(choice.index)
 		} else {
 			predFv := state.GetFvCache(choice)
-			good :=
+			good := BestAllowedActionIndex
