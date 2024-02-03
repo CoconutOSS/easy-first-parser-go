@@ -178,4 +178,5 @@ func (model *Model) Update(gold *Sentence) {
 			predFv := state.GetFvCache(choice)
 			good := BestAllowedActionIndexPair(&model.weight, state, allow)
 			goodFv := state.GetFvCache(good)
-			model.up
+			model.updateWeight(&goodFv, &predFv)
+		}
