@@ -180,3 +180,5 @@ func (model *Model) Update(gold *Sentence) {
 			goodFv := state.GetFvCache(good)
 			model.updateWeight(&goodFv, &predFv)
 		}
+		iter++
+		if iter > 500 { /
