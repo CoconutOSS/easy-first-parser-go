@@ -182,4 +182,9 @@ func (model *Model) Update(gold *Sentence) {
 		}
 		iter++
 		if iter > 500 { // for infinite loop
-			bre
+			break
+		}
+	}
+}
+
+// w
