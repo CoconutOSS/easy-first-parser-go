@@ -181,4 +181,5 @@ func (model *Model) Update(gold *Sentence) {
 			model.updateWeight(&goodFv, &predFv)
 		}
 		iter++
-		if iter > 500 { /
+		if iter > 500 { // for infinite loop
+			bre
