@@ -187,4 +187,5 @@ func (model *Model) Update(gold *Sentence) {
 	}
 }
 
-// w
+// w_t - w_cum / t
+func (model
