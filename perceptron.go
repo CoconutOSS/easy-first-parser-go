@@ -188,4 +188,4 @@ func (model *Model) Update(gold *Sentence) {
 }
 
 // w_t - w_cum / t
-func (model
+func (model *Model) AveragedW
