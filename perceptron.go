@@ -188,4 +188,5 @@ func (model *Model) Update(gold *Sentence) {
 }
 
 // w_t - w_cum / t
-func (model *Model) AveragedW
+func (model *Model) AveragedWeight() []float64 {
+	avg :
