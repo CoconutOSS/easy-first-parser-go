@@ -191,4 +191,6 @@ func (model *Model) Update(gold *Sentence) {
 func (model *Model) AveragedWeight() []float64 {
 	avg := make([]float64, MaxFeatureLength)
 	for k, v := range model.weight {
-		avg[k] =
+		avg[k] = v
+	}
+	for k, v := range mode
