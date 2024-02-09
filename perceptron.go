@@ -189,4 +189,5 @@ func (model *Model) Update(gold *Sentence) {
 
 // w_t - w_cum / t
 func (model *Model) AveragedWeight() []float64 {
-	avg := make([]float64, MaxFeatu
+	avg := make([]float64, MaxFeatureLength)
+	for k, v := ra
