@@ -194,4 +194,5 @@ func (model *Model) AveragedWeight() []float64 {
 		avg[k] = v
 	}
 	for k, v := range model.cumWeight {
-		avg[k] = avg[k] - 
+		avg[k] = avg[k] - v/float64(model.count)
+	}
