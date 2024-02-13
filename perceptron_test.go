@@ -137,3 +137,19 @@ func TestUpdateWeight(t *testing.T) {
 }
 
 func TestUpdate(t *testing.T) {
+	words := make([]*Word, 0)
+	words = append(words,
+		makeRootWord(),
+		makeWord("ms.", "NNP", 1, 2),
+		makeWord("hang", "NNP", 2, 3),
+		makeWord("plays", "VBZ", 3, 0),
+		makeWord("elianti", "NNP", 4, 3),
+		makeWord(".", ".", 5, 3),
+	)
+	sent := Sentence{words: words}
+	model := NewModel()
+	model.Update(&sent)
+	if model.count == 1 {
+		t.Error("count must be greater than 1")
+	}
+}
