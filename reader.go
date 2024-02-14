@@ -76,3 +76,9 @@ func LoadModel(filename string) (*[]float64, error) {
 	defer file.Close()
 	if err != nil {
 		return nil, err
+	}
+
+	decoder := gob.NewDecoder(file)
+	decoder.Decode(&w)
+	return &w, nil
+}
