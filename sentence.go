@@ -1,4 +1,7 @@
 package main
 
 type Sentence struct {
-	words [
+	words []*Word
+}
+
+// extra
