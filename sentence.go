@@ -1,3 +1,4 @@
 package main
 
-type Sent
+type Sentence struct {
+	words [
