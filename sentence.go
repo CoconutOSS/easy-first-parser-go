@@ -4,4 +4,4 @@ type Sentence struct {
 	words []*Word
 }
 
-// extra
+// extract heads without root for eval
