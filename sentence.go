@@ -7,4 +7,5 @@ type Sentence struct {
 // extract heads without root for evaluation
 func (sent *Sentence) ExtractHeads() []int {
 	heads := make([]int, 0)
-	for _, w := range sent.w
+	for _, w := range sent.words[1:] {
+		heads = ap
