@@ -5,4 +5,4 @@ type Sentence struct {
 }
 
 // extract heads without root for evaluation
-func (sent *
+func (sent *Sentence) ExtractHeads() []
