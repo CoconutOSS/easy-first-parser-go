@@ -5,4 +5,5 @@ type Sentence struct {
 }
 
 // extract heads without root for evaluation
-func (sent *Sentence) ExtractHeads() []
+func (sent *Sentence) ExtractHeads() []int {
+	heads := make([]int,
