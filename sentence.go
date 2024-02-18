@@ -13,4 +13,5 @@ func (sent *Sentence) ExtractHeads() []int {
 	return heads
 }
 
-func (sent *Sentence) ExtractPredictedHe
+func (sent *Sentence) ExtractPredictedHeads() []int {
+	heads :=
