@@ -10,4 +10,7 @@ func (sent *Sentence) ExtractHeads() []int {
 	for _, w := range sent.words[1:] {
 		heads = append(heads, w.head)
 	}
-	return h
+	return heads
+}
+
+func (sent *Sentenc
