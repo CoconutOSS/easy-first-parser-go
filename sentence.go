@@ -14,4 +14,5 @@ func (sent *Sentence) ExtractHeads() []int {
 }
 
 func (sent *Sentence) ExtractPredictedHeads() []int {
-	heads :=
+	heads := make([]int, 0)
+	for _, 
