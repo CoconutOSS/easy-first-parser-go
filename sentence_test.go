@@ -5,4 +5,5 @@ import (
 	"testing"
 )
 
-func TestExtractHeads(t *te
+func TestExtractHeads(t *testing.T) {
+	words := make([]*Word
