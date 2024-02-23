@@ -6,4 +6,5 @@ import (
 )
 
 func TestExtractHeads(t *testing.T) {
-	words := make([]*Word
+	words := make([]*Word, 0)
+	words = append(words
