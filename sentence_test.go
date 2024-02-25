@@ -9,4 +9,5 @@ func TestExtractHeads(t *testing.T) {
 	words := make([]*Word, 0)
 	words = append(words,
 		makeRootWord(),
-		makeW
+		makeWord("ms.", "NNP", 1, 2),
+	
