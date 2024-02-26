@@ -11,4 +11,5 @@ func TestExtractHeads(t *testing.T) {
 		makeRootWord(),
 		makeWord("ms.", "NNP", 1, 2),
 		makeWord("hang", "NNP", 2, 3),
-		makeWord("plays
+		makeWord("plays", "VBZ", 3, 0),
+		makeWord("elianti", "NN
