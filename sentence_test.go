@@ -13,4 +13,6 @@ func TestExtractHeads(t *testing.T) {
 		makeWord("hang", "NNP", 2, 3),
 		makeWord("plays", "VBZ", 3, 0),
 		makeWord("elianti", "NNP", 4, 3),
-		makeWord("."
+		makeWord(".", ".", 5, 3),
+	)
+	sent := Senten
