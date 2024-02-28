@@ -16,4 +16,6 @@ func TestExtractHeads(t *testing.T) {
 		makeWord(".", ".", 5, 3),
 	)
 	sent := Sentence{words: words}
-	head := s
+	head := sent.ExtractHeads()
+
+	
