@@ -18,4 +18,4 @@ func TestExtractHeads(t *testing.T) {
 	sent := Sentence{words: words}
 	head := sent.ExtractHeads()
 
-	
+	if !reflect.
