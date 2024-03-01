@@ -19,4 +19,6 @@ func TestExtractHeads(t *testing.T) {
 	head := sent.ExtractHeads()
 
 	if !reflect.DeepEqual(head, []int{2, 3, 0, 3, 3}) {
-		t.Error("head extraction seems wrong"
+		t.Error("head extraction seems wrong")
+	}
+}
