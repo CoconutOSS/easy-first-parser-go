@@ -18,4 +18,5 @@ func TestExtractHeads(t *testing.T) {
 	sent := Sentence{words: words}
 	head := sent.ExtractHeads()
 
-	if !reflect.DeepEqual(head, []int{2, 3, 
+	if !reflect.DeepEqual(head, []int{2, 3, 0, 3, 3}) {
+		t.Error("h
