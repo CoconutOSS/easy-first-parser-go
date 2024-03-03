@@ -4,4 +4,7 @@ import (
 	"math"
 	"reflect"
 	"runtime"
-	"strc
+	"strconv"
+)
+
+type FvCache map[str
