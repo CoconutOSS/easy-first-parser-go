@@ -7,4 +7,6 @@ import (
 	"strconv"
 )
 
-type FvCache map[str
+type FvCache map[string][]int
+
+type State struct
