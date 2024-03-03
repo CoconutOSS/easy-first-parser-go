@@ -2,4 +2,6 @@ package main
 
 import (
 	"math"
-	"refl
+	"reflect"
+	"runtime"
+	"strc
