@@ -9,4 +9,6 @@ import (
 
 type FvCache map[string][]int
 
-type State struct
+type State struct {
+	pending []*Word
+	ar
