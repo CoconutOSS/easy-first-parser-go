@@ -15,4 +15,4 @@ type State struct {
 	fvCache FvCache
 }
 
-func (state *State) cacheKeyStr(
+func (state *State) cacheKeyStr(pair ActionIndexPair) string {
