@@ -11,4 +11,4 @@ type FvCache map[string][]int
 
 type State struct {
 	pending []*Word
-	ar
+	arcs    map[int]i
