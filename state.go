@@ -16,4 +16,4 @@ type State struct {
 }
 
 func (state *State) cacheKeyStr(pair ActionIndexPair) string {
-	funcName := runtime.Func
+	funcName := runtime.FuncForPC(reflect.ValueOf(pair.
