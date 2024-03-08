@@ -17,4 +17,5 @@ type State struct {
 
 func (state *State) cacheKeyStr(pair ActionIndexPair) string {
 	funcName := runtime.FuncForPC(reflect.ValueOf(pair.action).Pointer()).Name()
-	left := state.pending[pai
+	left := state.pending[pair.index]
+	right := 
