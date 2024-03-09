@@ -19,4 +19,7 @@ func (state *State) cacheKeyStr(pair ActionIndexPair) string {
 	funcName := runtime.FuncForPC(reflect.ValueOf(pair.action).Pointer()).Name()
 	left := state.pending[pair.index]
 	right := state.pending[pair.index+1]
-	return funcName + ":" + strconv.Itoa(left.idx) + "-" + strcon
+	return funcName + ":" + strconv.Itoa(left.idx) + "-" + strconv.Itoa(right.idx)
+}
+
+func (s
