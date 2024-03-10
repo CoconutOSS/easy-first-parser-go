@@ -22,4 +22,4 @@ func (state *State) cacheKeyStr(pair ActionIndexPair) string {
 	return funcName + ":" + strconv.Itoa(left.idx) + "-" + strconv.Itoa(right.idx)
 }
 
-func (s
+func (state *State) InitFvCache() {
