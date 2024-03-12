@@ -24,4 +24,5 @@ func (state *State) cacheKeyStr(pair ActionIndexPair) string {
 
 func (state *State) InitFvCache() {
 	for _, f := range StateActions {
-		for idx := 0; idx < len(state.pending)-
+		for idx := 0; idx < len(state.pending)-1; idx++ {
+			pair := 
