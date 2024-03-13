@@ -27,4 +27,9 @@ func (state *State) InitFvCache() {
 		for idx := 0; idx < len(state.pending)-1; idx++ {
 			pair := ActionIndexPair{f, idx}
 			fv := ExtractFeatures(state, pair)
-			state.fvCache[state.cacheKeyStr(pair)] = f
+			state.fvCache[state.cacheKeyStr(pair)] = fv
+		}
+	}
+}
+
+func NewState(pending []*Wor
