@@ -32,4 +32,5 @@ func (state *State) InitFvCache() {
 	}
 }
 
-func NewState(pending []*Wor
+func NewState(pending []*Word) *State {
+	for _, w :=
