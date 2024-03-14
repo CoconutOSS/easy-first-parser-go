@@ -33,4 +33,5 @@ func (state *State) InitFvCache() {
 }
 
 func NewState(pending []*Word) *State {
-	for _, w :=
+	for _, w := range pending {
+		w.childre
