@@ -34,4 +34,6 @@ func (state *State) InitFvCache() {
 
 func NewState(pending []*Word) *State {
 	for _, w := range pending {
-		w.childre
+		w.children = make([]Word, 0)
+	}
+	p := ma
