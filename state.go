@@ -38,4 +38,4 @@ func NewState(pending []*Word) *State {
 	}
 	p := make([]*Word, len(pending))
 	copy(p, pending)
-	state := State{p, ma
+	state := State{p, make(map[int]int), Fv
