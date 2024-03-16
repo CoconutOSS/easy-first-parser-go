@@ -37,4 +37,5 @@ func NewState(pending []*Word) *State {
 		w.children = make([]Word, 0)
 	}
 	p := make([]*Word, len(pending))
-	copy(p,
+	copy(p, pending)
+	state := State{p, ma
