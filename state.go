@@ -43,4 +43,4 @@ func NewState(pending []*Word) *State {
 	return &state
 }
 
-func
+func (state *State) deletePending
