@@ -44,4 +44,4 @@ func NewState(pending []*Word) *State {
 }
 
 func (state *State) deletePending(idx int) []*Word {
-	state.pending = append(state.pending[:idx], 
+	state.pending = append(state.pending[:idx], state.pending[idx+1:]...)
