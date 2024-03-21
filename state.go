@@ -48,4 +48,4 @@ func (state *State) deletePending(idx int) []*Word {
 	return state.pending
 }
 
-fu
+func (state *State) R
