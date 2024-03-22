@@ -48,4 +48,4 @@ func (state *State) deletePending(idx int) []*Word {
 	return state.pending
 }
 
-func (state *State) R
+func (state *State) ResetFvCache(index int)
