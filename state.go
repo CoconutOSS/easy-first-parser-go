@@ -49,4 +49,5 @@ func (state *State) deletePending(idx int) []*Word {
 }
 
 func (state *State) ResetFvCache(index int) {
-	for _, f := range State
+	for _, f := range StateActions {
+		min := int(math
