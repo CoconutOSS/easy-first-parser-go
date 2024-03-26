@@ -53,4 +53,5 @@ func (state *State) ResetFvCache(index int) {
 		min := int(math.Max(0, float64(index-3)))
 		max := int(math.Min(float64(len(state.pending)-1), float64(index+3)))
 		for idx := min; idx < max; idx++ {
-			pai
+			pair := ActionIndexPair{f, idx}
+		
