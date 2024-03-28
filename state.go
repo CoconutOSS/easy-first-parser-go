@@ -59,4 +59,4 @@ func (state *State) ResetFvCache(index int) {
 	}
 }
 
-func (state *St
+func (state *State) GetFvCache(pair Ac
