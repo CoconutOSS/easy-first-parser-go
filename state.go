@@ -59,4 +59,5 @@ func (state *State) ResetFvCache(index int) {
 	}
 }
 
-func (state *State) GetFvCache(pair Ac
+func (state *State) GetFvCache(pair ActionIndexPair) []int {
+	k
