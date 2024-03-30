@@ -60,4 +60,4 @@ func (state *State) ResetFvCache(index int) {
 }
 
 func (state *State) GetFvCache(pair ActionIndexPair) []int {
-	k
+	key := state.cacheKeyStr
