@@ -64,4 +64,5 @@ func (state *State) GetFvCache(pair ActionIndexPair) []int {
 	if fv, ok := state.fvCache[key]; ok {
 		return fv
 	} else {
-		fv = Extrac
+		fv = ExtractFeatures(state, pair)
+		state
