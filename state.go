@@ -66,4 +66,6 @@ func (state *State) GetFvCache(pair ActionIndexPair) []int {
 	} else {
 		fv = ExtractFeatures(state, pair)
 		state.fvCache[key] = fv
-		retu
+		return fv
+	}
+}
