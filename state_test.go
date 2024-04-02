@@ -4,4 +4,4 @@ import (
 	"testing"
 )
 
-fu
+func TestDeletePending
