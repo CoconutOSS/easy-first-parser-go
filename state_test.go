@@ -4,4 +4,5 @@ import (
 	"testing"
 )
 
-func TestDeletePending
+func TestDeletePending(t *testing.T) {
+	wo
