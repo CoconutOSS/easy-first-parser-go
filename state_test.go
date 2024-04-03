@@ -8,4 +8,5 @@ func TestDeletePending(t *testing.T) {
 	words := make([]*Word, 0)
 	words = append(words,
 		makeRootWord(),
-		m
+		makeWord("ms.", "NNP", 0, -1),
+		
