@@ -5,4 +5,5 @@ import (
 )
 
 func TestDeletePending(t *testing.T) {
-	wo
+	words := make([]*Word, 0)
+	words = app
