@@ -10,4 +10,4 @@ func TestDeletePending(t *testing.T) {
 		makeRootWord(),
 		makeWord("ms.", "NNP", 0, -1),
 		makeWord("hang", "NNP", 1, 0),
-		ma
+		makeWord("plays", "VBZ
