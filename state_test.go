@@ -13,4 +13,6 @@ func TestDeletePending(t *testing.T) {
 		makeWord("plays", "VBZ", 2, 1),
 	)
 	s := NewState(words)
-	s.deletePendi
+	s.deletePending(2)
+
+	if s.pending[1].surface 
