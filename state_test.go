@@ -15,4 +15,5 @@ func TestDeletePending(t *testing.T) {
 	s := NewState(words)
 	s.deletePending(2)
 
-	if s.pending[1].surface 
+	if s.pending[1].surface != "ms." {
+		t.Error("surfac
