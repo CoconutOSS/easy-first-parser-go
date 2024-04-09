@@ -18,4 +18,4 @@ func TestDeletePending(t *testing.T) {
 	if s.pending[1].surface != "ms." {
 		t.Error("surface must be 'ms.'")
 	}
-	if s.pending
+	if s.pending[2].surface != "plays" {
