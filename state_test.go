@@ -27,4 +27,4 @@ func TestDeletePending(t *testing.T) {
 		t.Error("surface must be 'plays'")
 	}
 
-	if
+	if words[1].surface !=
