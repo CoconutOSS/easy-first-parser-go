@@ -28,4 +28,4 @@ func TestDeletePending(t *testing.T) {
 	}
 
 	if words[1].surface != "ms." {
-		t.Error("surfac
+		t.Error("surface is wrong!!!" + words[1].surf
