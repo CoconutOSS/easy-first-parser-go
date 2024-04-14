@@ -44,3 +44,4 @@ func (word *Word) RightMostChild() *Word {
 	} else {
 		return &word.children[len(word.children)-1]
 	}
+}
