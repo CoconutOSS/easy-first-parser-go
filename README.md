@@ -5,4 +5,7 @@
 
 easy-first-parser-go - An efficient open-source Dependency Parser utilizing the Easy-First Algorithm written in Go.
 
-# Build from so
+# Build from source
+
+```sh
+% git clone 
