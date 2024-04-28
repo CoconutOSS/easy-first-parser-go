@@ -8,4 +8,4 @@ easy-first-parser-go - An efficient open-source Dependency Parser utilizing the 
 # Build from source
 
 ```sh
-% git clone https://github.com/CoconutO
+% git clone https://github.com/CoconutOSS/easy-first-parse
