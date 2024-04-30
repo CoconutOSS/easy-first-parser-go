@@ -10,4 +10,7 @@ easy-first-parser-go - An efficient open-source Dependency Parser utilizing the 
 ```sh
 % git clone https://github.com/CoconutOSS/easy-first-parser-go.git
 % cd easy-first-parser-go
-% make deps && make bindata
+% make deps && make bindata && make build
+```
+
+# Us
