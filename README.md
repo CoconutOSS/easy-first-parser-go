@@ -13,4 +13,5 @@ easy-first-parser-go - An efficient open-source Dependency Parser utilizing the 
 % make deps && make bindata && make build
 ```
 
-# Us
+# Usage
+easy-first-pars
