@@ -14,4 +14,4 @@ easy-first-parser-go - An efficient open-source Dependency Parser utilizing the 
 ```
 
 # Usage
-easy-first-parser-go has `train` (training a parser pha
+easy-first-parser-go has `train` (training a parser phase) and `eval` (evalu
