@@ -14,4 +14,4 @@ easy-first-parser-go - An efficient open-source Dependency Parser utilizing the 
 ```
 
 # Usage
-easy-first-pars
+easy-first-parser-go has `train` (t
