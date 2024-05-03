@@ -16,4 +16,5 @@ easy-first-parser-go - An efficient open-source Dependency Parser utilizing the 
 # Usage
 easy-first-parser-go has `train` (training a parser phase) and `eval` (evaluating a trained parser phase) modes. To see the detail options, type `./easy-first-parser-go --help`.
 
-## Traini
+## Training a parser
+To see the detail opti
