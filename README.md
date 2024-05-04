@@ -20,4 +20,4 @@ easy-first-parser-go has `train` (training a parser phase) and `eval` (evaluatin
 To see the detail options, type `./easy-first-parser-go train --help`.
 
 ```sh
-% ./easy-first-parser-go train --train-filename p
+% ./easy-first-parser-go train --train-filename path/to/train.txt --dev-
