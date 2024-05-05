@@ -22,4 +22,6 @@ To see the detail options, type `./easy-first-parser-go train --help`.
 ```sh
 % ./easy-first-parser-go train --train-filename path/to/train.txt --dev-filename path/to/dev.txt --max-iter 10 --model-filename model.bin
 0, 0.907, 0.893
-1, 0.920, 
+1, 0.920, 0.901
+2, 0.929, 0.904
+3, 
