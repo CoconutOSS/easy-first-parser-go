@@ -24,4 +24,5 @@ To see the detail options, type `./easy-first-parser-go train --help`.
 0, 0.907, 0.893
 1, 0.920, 0.901
 2, 0.929, 0.904
-3, 
+3, 0.935, 0.906
+4, 0.940, 0
