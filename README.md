@@ -30,4 +30,7 @@ To see the detail options, type `./easy-first-parser-go train --help`.
 6, 0.947, 0.908
 7, 0.950, 0.908
 8, 0.953, 0.908
-9, 0.955, 0
+9, 0.955, 0.908
+```
+
+## Evaluating a 
