@@ -33,4 +33,5 @@ To see the detail options, type `./easy-first-parser-go train --help`.
 9, 0.955, 0.908
 ```
 
-## Evaluating a 
+## Evaluating a trained parser
+To see the detail 
