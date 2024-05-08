@@ -34,4 +34,4 @@ To see the detail options, type `./easy-first-parser-go train --help`.
 ```
 
 ## Evaluating a trained parser
-To see the detail 
+To see the detail options, type `./easy-first-
