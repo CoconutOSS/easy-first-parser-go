@@ -37,4 +37,4 @@ To see the detail options, type `./easy-first-parser-go train --help`.
 To see the detail options, type `./easy-first-parser-go eval --help`.
 
 ```sh
-% ./easy-f
+% ./easy-first-parser-go eval --t
