@@ -40,4 +40,4 @@ To see the detail options, type `./easy-first-parser-go eval --help`.
 % ./easy-first-parser-go eval --test-filename path/to/test.txt --model-filename model.bin
 | SENTENCES | SECONDS | ACCURACY |
 |-----------|---------|----------|
-|      1346 |
+|      1346 |    4.60 |    0.888 |
