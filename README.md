@@ -38,4 +38,5 @@ To see the detail options, type `./easy-first-parser-go eval --help`.
 
 ```sh
 % ./easy-first-parser-go eval --test-filename path/to/test.txt --model-filename model.bin
-| SENTENCES | SECONDS | ACCURACY 
+| SENTENCES | SECONDS | ACCURACY |
+|-----------|---------|----
