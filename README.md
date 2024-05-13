@@ -43,4 +43,6 @@ To see the detail options, type `./easy-first-parser-go eval --help`.
 |      1346 |    4.60 |    0.888 |
 ```
 
-## [Experimental] Obtain a single binary embedd
+## [Experimental] Obtain a single binary embedded model parameters
+
+``
