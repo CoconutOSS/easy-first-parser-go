@@ -45,4 +45,5 @@ To see the detail options, type `./easy-first-parser-go eval --help`.
 
 ## [Experimental] Obtain a single binary embedded model parameters
 
-``
+```sh
+% ./easy-fir
