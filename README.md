@@ -46,4 +46,4 @@ To see the detail options, type `./easy-first-parser-go eval --help`.
 ## [Experimental] Obtain a single binary embedded model parameters
 
 ```sh
-% ./easy-first-parser-go train --train-filename path/to/tr
+% ./easy-first-parser-go train --train-filename path/to/train.txt --dev-filename path/
