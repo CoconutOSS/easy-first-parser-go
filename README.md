@@ -47,4 +47,5 @@ To see the detail options, type `./easy-first-parser-go eval --help`.
 
 ```sh
 % ./easy-first-parser-go train --train-filename path/to/train.txt --dev-filename path/to/dev.txt --max-iter 10 --model-filename data/model.bin
-% make bindata && make bui
+% make bindata && make build
+% ./easy-first-pa
