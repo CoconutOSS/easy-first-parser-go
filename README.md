@@ -54,4 +54,5 @@ To see the detail options, type `./easy-first-parser-go eval --help`.
 # Roadmap
 - [ ] Implement PP-Attachment features
 - [ ] Beam search with max-violation perceptron
-- [ ] Mini-
+- [ ] Mini-batch update
+- [x] Embed weight 
