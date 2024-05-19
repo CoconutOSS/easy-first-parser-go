@@ -57,4 +57,5 @@ To see the detail options, type `./easy-first-parser-go eval --help`.
 - [ ] Mini-batch update
 - [x] Embed weight parameters to a built binary file using go-bindata
 
-# 
+# Maintainer
+CoconutOSS
