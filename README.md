@@ -55,4 +55,6 @@ To see the detail options, type `./easy-first-parser-go eval --help`.
 - [ ] Implement PP-Attachment features
 - [ ] Beam search with max-violation perceptron
 - [ ] Mini-batch update
-- [x] Embed weight parameters to a built bin
+- [x] Embed weight parameters to a built binary file using go-bindata
+
+# 
